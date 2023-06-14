@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-const playersPlayoffCtrl = require('../controllers/players')
+const playersPlayoffCtrl = require('../controllers/playersPlayoff')
 
 /* GET users listing. */
 router.get('/', playersPlayoffCtrl.index)
