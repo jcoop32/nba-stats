@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Players</title>
+</head>
+<body>
+    <h2>NBA Players 2023</h2>
+    <%for(let i=0; i < players.length; i++){%>
+        <li>
+            <a href="/<%=players[i].id%>"><%=players[i].name%></a>
+        </li>
+    <%}%>
+</body>
+</html>
