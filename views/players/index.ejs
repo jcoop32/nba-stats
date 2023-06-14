@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Players</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
 </head>
 <body>
+    <a href="/">Home</a>
     <h2>NBA Players 2023</h2>
     <%for(let i=0; i < players.length; i++){%>
         <li>
-            <a href="/<%=players[i].id%>"><%=players[i].name%></a>
+            <a href="/players/<%=players[i].id%>"><%=players[i].name%></a>
         </li>
     <%}%>
 </body>

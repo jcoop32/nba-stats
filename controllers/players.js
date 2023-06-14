@@ -2,7 +2,7 @@ const Player = require('../models/player')
 
 module.exports = {
     index,
-    // show,
+    show,
 };
 
 function index(req, res){
@@ -11,6 +11,8 @@ function index(req, res){
     });
 }
 
-// function show(){
-// 
-// }
+function show(req, res){
+    res.render('players/show', {
+        players: Player.getOne(req.params.id)
+    });
+}

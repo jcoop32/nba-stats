@@ -14,8 +14,8 @@ const players = [
     {id: 909468, name: 'Kyrie Irving', img: '../public/images/', ppg: 26.7, rpg: 5.1, apg: 5.9, team: 'Dal'},
     {id: 694684, name: 'Anthony Davis', img: '../public/images/', ppg: 26.5, rpg: 12.4, apg: 2.6, team: 'Lal'},
     {id: 738545, name: 'Ja Morant', img: '../public/images/', ppg: 26.4, rpg: 5.9, apg: 8.1, team: 'Mem'},
-    {id: 578342, name: 'Trae Young', img: '../public/images/', ppg: 26.2, rpg: 3, apg: 9.9, team: 'Atl'},
-    {id: 456765, name: 'Zion Williamson', img: '../public/images/', ppg: 26, rpg: 7, apg: 4.6, team: 'Nor'},
+    {id: 578342, name: 'Trae Young', img: '../public/images/', ppg: 26.2, rpg: 3.0, apg: 9.9, team: 'Atl'},
+    {id: 456765, name: 'Zion Williamson', img: '../public/images/', ppg: 26.0, rpg: 7, apg: 4.6, team: 'Nor'},
     {id: 634534, name: 'Kevin Durant', img: '../public/images/', ppg: 25.6, rpg: 6.3, apg: 3.4, team: 'Pho'},
     {id: 753354, name: 'Lauri Markkanen', img: '../public/images/', ppg: 25.6, rpg: 8.6, apg: 1.9, team: 'Uta'},
     {id: 898939, name: `De'Aaron Fox`, img: '../public/images/', ppg: 25.1, rpg: 4.2, apg: 6.1, team: 'Sac'},
@@ -33,5 +33,5 @@ function getAll(){
 
 function getOne(id){
     id = parseInt(id)
-    return players.find(players => players.id === id)
+    return players.find(player => player.id === id)
 }

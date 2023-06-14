@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=players.name%></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+    <a href="/players">Back</a>
+    <h2><%=players.name%> | <%=players.team%> </h2>
+    <img src="<%=players.img%>" class="player-photo">
+    <h3>2023 Season Averages:</h3>
+    <p>Points: <%=players.ppg%></p>
+    <p>Rebounds: <%=players.rpg%></p>
+    <p>Assists: <%=players.apg%></p>
+    
+</body>
+</html>
