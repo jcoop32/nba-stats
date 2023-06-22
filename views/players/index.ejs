@@ -9,10 +9,13 @@
 <body>
     <a href="/">Home</a>
     <h2>2023 Regular Season Leaders</h2>
-    <%for(let i=0; i < players.length; i++){%>
-        <li>
-            <a href="/players/<%=players[i].id%>"><%=players[i].name%></a>
-        </li>
-    <%}%>
+    <ol>
+        <%for(let i=0; i < players.length; i++){%>
+            <li>
+                <a href="/players/<%=players[i].id%>"><%=players[i].name%></a>
+            </li>
+        <%}%>
+
+    </ol>
 </body>
 </html>
